@@ -46,6 +46,11 @@ class MyApp extends StatelessWidget {
           ),
           textTheme: GoogleFonts.dmSansTextTheme(),
           useMaterial3: true,
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.white,
+            surfaceTintColor: Colors.transparent,
+            elevation: 0,
+          ),
         ),
         darkTheme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
