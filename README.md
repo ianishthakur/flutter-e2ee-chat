@@ -4,7 +4,7 @@ A Flutter End-to-End Encrypted chat application with real-time messaging via Pus
 
 ## 📸 App Preview
 
-<img src="assets/screenshots/username.png" width="250"> <img src="assets/screenshots/create_new.png" width="250"> <img src="assets/screenshots/create_room.png" width="250"> <img src="assets/screenshots/dark_create_room.png" width="250"> <img src="assets/screenshots/join_room.png" width="250"> <img src="assets/screenshots/dark_join_room.png" width="250">  <img src="assets/screenshots/chat_screen.png" width="250">  <img src="assets/screenshots/active_users.png" width="250">
+<img src="assets/screenshots/username.png" width="250"> <img src="assets/screenshots/create_new.png" width="250"> <img src="assets/screenshots/create_room.png" width="250"> <img src="assets/screenshots/dark_create_room.png" width="250"> <img src="assets/screenshots/join_room.png" width="250"> <img src="assets/screenshots/dark_join_room.png" width="250">  <img src="assets/screenshots/chat_screen.png" width="250">  <img src="assets/screenshots/active_users.png" width="250"> <img src="assets/screenshots/invalid_pin.png" width="250">
 
 ## Features
 
