@@ -1,9 +1,5 @@
-import 'dart:io';
-
-import 'package:e2ee_chatapp/core/core/network/http_overrides.dart';
 import 'package:e2ee_chatapp/core/services/encryption_services.dart';
 import 'package:e2ee_chatapp/features/chat/data/datasources/pusher_services.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -16,11 +12,12 @@ import 'features/chat/presentation/pages/username_screen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  if (kDebugMode) {
-    HttpOverrides.global = MyHttpOverrides();
-  }
-
   await dotenv.load(fileName: ".env");
+
+  // NOTE: HttpOverrides is only used for local development
+  // with self-signed certificates. Disabled for production security.
+  // HttpOverrides.global = MyHttpOverrides();
+
   runApp(const MyApp());
 }
 
