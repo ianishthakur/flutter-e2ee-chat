@@ -91,6 +91,7 @@ class _JoinCreateScreenState extends State<JoinCreateScreen>
         _joinRoomIdController.clear();
         _joinPinController.clear();
         _joinRoomNameController.clear();
+        _createRoomNameController.clear();
       }
     } finally {
       if (mounted) {

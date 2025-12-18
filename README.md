@@ -2,6 +2,10 @@
 
 A Flutter End-to-End Encrypted chat application with real-time messaging via Pusher.
 
+## 📸 App Preview
+
+<img src="assets/screenshots/username.png" width="250"> <img src="assets/screenshots/create_new.png" width="250"> <img src="assets/screenshots/create_room.png" width="250"> <img src="assets/screenshots/dark_create_room.png" width="250"> <img src="assets/screenshots/join_room.png" width="250"> <img src="assets/screenshots/dark_join_room.png" width="250">  <img src="assets/screenshots/chat_screen.png" width="250">  <img src="assets/screenshots/active_users.png" width="250">
+
 ## Features
 
 - 🔐 AES-256 encryption (client-side)
@@ -15,23 +19,26 @@ A Flutter End-to-End Encrypted chat application with real-time messaging via Pus
 lib/
 ├── core/
 │   ├── constants/
+│   │   ├── app_colors.dart        # Unified color palette
 │   │   └── env_configs.dart       # Environment configuration
 │   ├── network/
 │   │   └── http_overrides.dart    # SSL/HTTP overrides
 │   └── services/
-│       └── encryption_services.dart
-├── features/chat/
-│   ├── data/
-│   │   ├── datasources/pusher_services.dart
-│   │   ├── models/message_model.dart
-│   │   └── repositories/chat_repository_impl.dart
-│   ├── domain/
-│   │   ├── entities/message.dart
-│   │   └── repositories/chat_repository.dart
-│   └── presentation/
-│       ├── bloc/
-│       └── pages/
-└── main.dart
+│       └── encryption_services.dart     # AES-256-CBC implementation logic
+├── features/
+│   └── chat/                             # Domain-driven Chat feature
+│        ├── data/                        # Repositories & Pusher DataSources
+│        │   ├── datasources/pusher_services.dart
+│        │   ├── models/message_model.dart
+│        │   └── repositories/chat_repository_impl.dart
+│        ├── domain/                      # Business Logic (Entities & Repo Interfaces)
+│        │   ├── entities/message.dart
+│        │   └── repositories/chat_repository.dart
+│        └── presentation/                # UI Layer (BLoC & Widgets)
+│            ├── bloc/
+│            └── pages/
+├── main.dart                        # App entry point & initialization
+└── .env                             # (Local only) API credentials
 ```
 
 ## Setup
