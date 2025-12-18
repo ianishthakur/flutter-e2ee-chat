@@ -1,5 +1,7 @@
 # E2EE Chat App
 
+[![Download APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android)](https://github.com/ianishthakur/flutter-e2ee-chat/releases)
+
 A Flutter End-to-End Encrypted chat application with real-time messaging via Pusher.
 
 ## 📸 App Preview
