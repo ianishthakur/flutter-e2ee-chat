@@ -1,4 +1,4 @@
-import 'package:e2ee_chatapp/core/core/constants/app_colors.dart';
+import 'package:e2ee_chatapp/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
