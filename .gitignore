@@ -33,8 +33,10 @@ migrate_working_dir/
 /build/
 /coverage/
 
-# Sensitive keys
+# Sensitive environment variables
 .env
+.env*
+!.env.example
 
 # Symbolication related
 app.*.symbols
